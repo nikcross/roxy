@@ -1,0 +1,16 @@
+{
+    "name": "resrcit/roxy",
+    "description": "Roxy is our stand-alone proxy server. This tool allows you to use ReSRC when developing: locally (localhost), on intranets or under any other scenario where your images are not publicly available online.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Payne",
+            "email": "nick@kurai.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    }
+}

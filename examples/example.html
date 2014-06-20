@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>ReSRC Roxy Example</title>
+  <style>.resrc {width: 100%}</style>
+  <script src="http://use.resrc.it/0.7"></script>
+  <script>
+    resrc.ready(function () {
+      /**
+       * Set the server to the the address Roxy is running at.
+       * See: http://www.resrc.it/docs/javascript/0.7#options for more options
+       */
+      var defaults = {
+        server : "0.0.0.0:8001"
+      };
+      resrc.options = resrc.extend(resrc.options, defaults);
+      resrc.resrc();
+    });
+  </script>
+</head>
+<body>
+<!-- 1. Preferred Approach - http://www.resrc.it/demos/preferred -->
+<img data-src="http://your-local-server-address/img-dir/your-image.jpg" alt="" class="resrc"/>
+
+<!-- 2. The Preview Approach (aka: Mobile First) - http://www.resrc.it/demos/preview -->
+<img src="http://0.0.0.0:8001/s=w280/o=60(80)/http://your-local-server-address/img-dir/your-image.jpg" alt="" class="resrc"/>
+</body>
+</html>

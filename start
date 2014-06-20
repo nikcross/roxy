@@ -1,0 +1,8 @@
+#!/bin/bash
+: ${HOST:=0.0.0.0}
+: ${PORT:=8001}
+if [ -z "$1" ]; then
+    echo "Please supply an API token, i.e. ./start \"my-token-here\""
+    exit 1
+fi
+API_TOKEN="$1" php -d variables_order=EGPCS -S $HOST:$PORT proxy.php
