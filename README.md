@@ -1,12 +1,12 @@
 # Roxy - Local Development Proxy
 
 Roxy is our stand-alone proxy server. This tool allows you to use ReSRC when developing: locally (localhost),
-on intranets or under any other scenario where your images are not publicly available online.
+on intranets or in any other scenario where your images are not publicly available online.
 
 ## Requirements
 
 * PHP >= 5.4.0  
-* [resrc.js](http://use.resrc.it/0.7) >= 0.7 (If using our responsive image JavaScript library)
+* [resrc.js](http://use.resrc.it/0.9) >= 0.9 (If using our responsive image JavaScript library)
 
 ## Getting Started
 
