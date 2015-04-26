@@ -34,9 +34,9 @@ class ReSRC {
         $this->log("received preflight response, status code [".$response->getStatusCode()."]");
 
         if ($response->getStatusCode() === 404) {
-            $this->log("preflight cache miss, issuing full request to [".$response->getHeader("Host")."]...");
+            $this->log("preflight cache miss, issuing full request to [".$response->getHeader("ReSRC-AppHost")."]...");
 
-            $response = $this->getFullRequest($response->getHeader("Host"), $image)->execute();
+            $response = $this->getFullRequest($response->getHeader("ReSRC-AppHost"), $image)->execute();
 
             $this->log("received full response, status code [".$response->getStatusCode()."]");
         }
